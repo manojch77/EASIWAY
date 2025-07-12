@@ -1,17 +1,30 @@
-# Ignore Firebase credentials
-serviceAccountKey.json
-
-# Ignore environment variables
-.env
-
-# Ignore Python cache
-_pycache_/
+# Python
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
 
-# Ignore IDE/config files
+# VS Code
 .vscode/
-*.log
 
-# Ignore OS-specific files
+# OS junk
 .DS_Store
 Thumbs.db
+
+# Flask / local secrets
+instance/
+serviceAccountKey.json
+
+# Pipenv / Poetry
+Pipfile.lock
+poetry.lock
+
+# Render build files
+render.yaml
+
+# Misc
+*.log
