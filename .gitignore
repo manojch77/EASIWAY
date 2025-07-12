@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Flask / local secrets
+instance/
+serviceAccountKey.json
+
+# Pipenv / Poetry
+Pipfile.lock
+poetry.lock
+
+# Render build files
+render.yaml
+
+# Misc
+*.log
