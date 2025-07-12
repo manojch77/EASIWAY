@@ -1,6 +1,7 @@
 from flask import Flask, request
 import firebase_admin
 from firebase_admin import credentials, db
+import os
 
 app = Flask(__name__)
 
@@ -58,6 +59,8 @@ def receive_data():
     print("❌ Missing id, lat, or lon")
     return "Missing id, lat, or lon", 400
 
+# ✅ Use Render-compatible dynamic port
 if __name__ == '__main__':
-    print("🚀 Flask running on port 5055")
-    app.run(host="0.0.0.0", port=5055, debug=True)
+    port = int(os.environ.get("PORT", 5055))  # Render uses dynamic port
+    print(f"🚀 Flask running on port {port}")
+    app.run(host="0.0.0.0", port=port)
