@@ -7,4 +7,4 @@ services:
     plan: free
     envVars:
       - key: GOOGLE_APPLICATION_CREDENTIALS
-        value: serviceAccountKey.json
+        value: ServiceAccountKey.json
