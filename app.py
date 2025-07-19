@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # ✅ Initialize Firebase only once
-cred = credentials.Certificate("ServiceAccountKey.json")
+cred = credentials.Certificate("serviceAccountKey.json")
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://easy-22b8-default-rtdb.firebaseio.com/'
