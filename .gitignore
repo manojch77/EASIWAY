@@ -17,7 +17,7 @@ Thumbs.db
 
 # Flask / local secrets
 instance/
-serviceAccountKey.json
+ServiceAccountKey.json
 
 # Pipenv / Poetry
 Pipfile.lock
